@@ -74,6 +74,7 @@ const AddModal = ({ handleClose, toast }) => {
                       autoComplete="channelName"
                       isInvalid={formik.errors.channelName && formik.touched.channelName}
                       required
+                      aria-label="Имя канала"
                       ref={inputRef}
                     />
                     <label className="visually-hidden" htmlFor="channelName">{t('chatPage.channels.name')}</label>
